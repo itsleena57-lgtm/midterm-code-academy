@@ -314,5 +314,7 @@ footer p {
     .benefits h2 {
         font-size: 21px;
     }
-
+html {
+    scroll-behavior: smooth;
+}
 }
