@@ -1,0 +1,318 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3fa;
+    color: #252b38;
+    padding: 18px;
+}
+
+/* Main Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #343078;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555b66;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #5145a5;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #343078;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #e5e3ff;
+}
+
+/* Courses Section */
+.courses {
+    margin-bottom: 20px;
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #d7dce5;
+    border-radius: 12px;
+    padding: 15px 12px;
+    min-height: 95px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.course-card h3 {
+    color: #51459b;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.course-card p {
+    color: #68717c;
+    font-size: 13px;
+}
+
+.course-card:hover {
+    background-color: #e3e5ff;
+    transform: translateY(-4px);
+}
+
+/* Most Popular Course */
+.popular {
+    background-color: #e3e5ff;
+    border: 2px solid #7770c5;
+}
+
+.popular-label {
+    display: inline-block;
+    background-color: #343078;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.about-box {
+    background-color: white;
+    padding: 18px 15px;
+    border-radius: 12px;
+}
+
+.about-box h3 {
+    color: #343b49;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    color: #68717c;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Student Benefits Section */
+.benefits {
+    background-color: #e3e8ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.benefits h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.benefit-box {
+    background-color: white;
+    padding: 18px 15px;
+    border: 1px solid #d7dce5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.benefit-box h3 {
+    color: #51459b;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.benefit-box p {
+    color: #68717c;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.benefit-box:hover {
+    background-color: #cfd3ff;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #e3e5ff;
+    text-align: center;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.contact h2 {
+    color: #343078;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.contact a {
+    color: #555b66;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact a:hover {
+    color: #343078;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #343078;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* Tablet Responsive Design */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav h2 {
+        font-size: 19px;
+    }
+
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .courses h2,
+    .about h2,
+    .benefits h2 {
+        font-size: 21px;
+    }
+
+}
