@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # BrightPath Tech Academy
 
@@ -35,3 +36,7 @@ I used CSS media queries with different screen widths. I adjusted the course car
 
 - HTML5
 - CSS3
+=======
+# midterm-code-academy
+>>>>>>> Midterm-3174404-Laiba Aftab
+
